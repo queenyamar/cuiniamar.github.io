@@ -1,0 +1,34 @@
+/* ============================================================================================
+/** Footer Styles
+=============================================================================================== */
+
+.main-footer {
+    background: $black;
+    margin-top: 0.5em;
+    padding: 1em 0;
+
+    @include tabletUp {
+        padding: 2em 0;
+    }
+
+    &__brand {
+        text-align: center;
+    }
+    
+    &__brand-link {
+        color: $white;
+        font-family: $font-logo;
+        font-size: 2.5rem;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &__copyrights {
+        color: $white;
+        text-align: center;
+        font-size: 0.8em;
+        margin-bottom: 0;
+    }
+}

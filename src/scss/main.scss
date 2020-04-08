@@ -1,0 +1,52 @@
+// Declaring Bootstrap core files here
+// so that it is available globally
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/font-awesome/scss/font-awesome";
+
+// ============================================================================
+// Utilities - Variable file along with starting point Mixins, Helpers and Placeholders.
+// ============================================================================
+
+@import "utilities/fonts";
+@import "utilities/variables";
+@import "utilities/global";
+@import "utilities/functions";
+@import "utilities/mixins";
+@import "utilities/helpers";
+
+
+// ============================================================================
+// Base - Site defaults
+// ============================================================================
+
+@import "base/bootstrap-overrides";
+@import "base/default-style";
+
+
+// ============================================================================
+// Layout
+// ============================================================================
+
+@import "layout/header";   
+@import "layout/main-content";
+@import "layout/footer";  
+   
+
+// ============================================================================
+// Components
+// ============================================================================
+
+@import "components/hero";
+@import "components/buttons";
+@import "components/profession";
+@import "components/about";
+@import "components/creatives";
+@import "components/skills";
+@import "components/dev-list";
+@import "components/contact";
+@import "components/social-media";
+
+
+// ============================================================================
+// Pages
+// ============================================================================

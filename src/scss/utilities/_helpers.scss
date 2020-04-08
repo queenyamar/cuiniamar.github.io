@@ -1,0 +1,75 @@
+// Parallax
+@mixin parallax-property {
+	background: {
+	    attachment: fixed;
+	    position: center;
+	    size: 100% 100%;
+	    repeat: no-repeat;
+  	}
+  min-height: 550px;
+}
+
+// Breakpoints Mixins
+@mixin smallmobileUp {
+  @media #{320px} {
+    @content;
+  }
+}
+
+@mixin mobileUp {
+  @media #{$mobileUp} {
+    @content;
+  }
+}
+
+@mixin tabletUp {
+  @media #{$tabletUp} {
+    @content;
+  }
+}
+
+@mixin tabletDown {
+  @media #{$tabletDown} {
+    @content;
+  }
+}
+
+
+@mixin desktopUp {
+  @media #{$desktopUp} {
+    @content;
+  }
+}
+
+@mixin desktopDown {
+  @media #{$desktopDown} {
+    @content;
+  }
+}
+
+@mixin widescreenUp {
+  @media #{$widescreenUp} {
+    @content;
+  }
+}
+
+@mixin bigwidescreenUp {
+  @media #{$bigwidescreenUp} {
+    @content;
+  }
+}
+
+@mixin smallmobile-tabletMax {
+  @media (min-width: 320px) and (max-width: 768px) {
+    @content;
+  }
+}
+
+// Colors
+.bg-black { background-color: $black !important; }
+.bg-white { background-color: $white !important; }
+.bg-bleach { background-color: $bleach !important; }
+.text-white { color: $white !important; }
+.text-black { color: $black !important; }
+
+.img-cover { object-fit: cover !important; }

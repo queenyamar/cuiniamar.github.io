@@ -1,0 +1,158 @@
+/* ============================================================================================
+/** Skills
+=============================================================================================== */
+
+.skills {
+    background: $black;
+    padding: 2em 0;
+
+    &__title {
+        text-align: center;
+        color: $white;
+        text-transform: uppercase;
+
+        @include desktopUp {
+            margin-top: 0.5em; 
+
+            &::after {
+                content: '';
+                background: $grey-l25;
+                display: block;
+                height: 1px;
+                width: 100%;
+                position: absolute;
+                top: 10px;
+            }
+        }
+    }
+
+    &__design-title,
+    &__dev-title {
+        color: $white;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__design-title {
+        margin: 0.5em 0;
+
+        @include desktopUp {
+            margin: 1em 0;
+            text-align: right;
+        }
+    }
+
+    &__design-title {
+        @include desktopUp {
+            margin-right: 54px;
+        }
+    }
+
+    &__dev-title {
+        margin: 1em 0 0.5em 0;
+
+        @include desktopUp{
+            margin: 1em 0;
+            text-align: left;
+        }
+    }
+
+    &__dev-label {
+        color: $white;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 500;
+
+        @include desktopUp {
+            text-align: left;
+        }
+    }
+
+    &__chart-container {
+        font-size: 6em;
+        
+        @include tabletUp {
+            margin-bottom: 0.3em;
+        }
+    }
+
+    &__design-description {
+        color: $white;
+        text-align: center;
+        margin-top: 0.8em;
+    }
+
+    &__pie-chart {
+        height: 1em;
+        width: 1em;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    &__pie {
+        height: 100%;
+        width: 100%;
+        clip: rect(0, 1em, 1em, 0.5em);
+        left: 0;
+        position: absolute;
+        top: 0;
+    }
+
+    &__pie-half {
+        height: 100%;
+        width: 100%;
+        border: 0.1em solid $white;
+        border-radius: 50%;
+        clip: rect(0, 0.5em, 1em, 0);
+        left: 0;
+        position: absolute;
+        top: 0;
+    }
+
+    &__pie-label {
+        background: lighten($black, 15%);
+        position: absolute;
+        border-radius: 50%;
+        bottom: 0.4em;
+        top: 0.4em;
+        left: 0.4em;
+        right: 0.4em;
+        color: $white;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            color: $white;
+            font-size: 0.6rem;
+            margin-bottom: -17px;
+        }
+    }
+
+    &--progress-83,
+    &--progress-87,
+    &--progress-80 {
+        .skills__pie {
+            clip: rect(auto, auto, auto, auto);
+        }
+    }
+
+    &--progress-83 {
+        .skills__pie-half--right {
+            transform: rotate(240deg);
+        }
+    }
+
+    &--progress-87 {
+        .skills__pie-half--right {
+            transform: rotate(227deg);
+        }
+    }
+
+    &--progress-80 {
+        .skills__pie-half--right {
+            transform: rotate(252deg);
+        }
+    }
+}

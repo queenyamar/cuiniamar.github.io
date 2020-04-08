@@ -1,0 +1,41 @@
+/* ============================================================================================
+/** Hero Styles
+=============================================================================================== */
+
+.hero {
+    padding: 1em 0 3em 0;
+
+    @include widescreenUp {
+        margin: 1em 0;
+    }
+
+    &__tagline {
+        @include desktopUp {
+            margin-top: 4.5em;
+        }
+    }
+
+    &__title {
+        font-family: $font-secondary;
+        font-size: 1.8rem;
+        color: $black;
+        text-align: center;
+
+        @include tabletUp {
+            text-align: left;
+        }
+    }
+
+    &__title span {
+        font-weight: 800;
+    }
+
+    &__image {
+        text-align: center;
+        margin-top: 1.5em;
+
+        @include desktopUp {
+            margin-top: 0;
+        }
+    }
+}

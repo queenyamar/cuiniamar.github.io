@@ -1,0 +1,103 @@
+/* ============================================================================================
+/** Creatives Styles
+=============================================================================================== */
+
+.creatives {
+    margin: 1em 0;
+
+    @include tabletUp {
+        margin: 3em 0;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 0;
+        color: $white;
+        text-align: center;
+
+        @include tabletUp {
+            text-align: left;
+        }
+    }
+
+    &__subtitle {
+        color: $grey;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $font-primary;
+        font-size: 1.25rem;
+        letter-spacing: 1px;
+        margin: 1em 0;
+
+        @include tabletUp {
+            text-align: left;
+        }
+    }
+
+    &__content {
+        padding: 2em 0.5em;
+
+        @include tabletUp {
+            padding: 0 1em 0 2em;
+        }
+
+        @include desktopUp {
+            padding: 3em 1em 3em 2em;
+        }
+
+        @include widescreenUp {
+            padding: 5em 1em 5em 2em;
+        }
+    }
+
+    &__images {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__img {
+        width: 30%;
+    }
+
+    &__texts {
+        margin-top: 1em;
+
+        @include desktopUp {
+            padding: 3em 1em;
+        }
+        
+        @include widescreenUp {
+            padding: 5em 1em;
+        }
+    }
+
+    &__subcontent {
+        padding: 1em 0.5em;
+
+        @include tabletUp {
+            padding: 0 1em 0 2em;
+        }
+
+        @include desktopUp {
+            padding: 3em 1em 3em 2em;
+        }
+
+        @include widescreenUp {
+            padding: 5em 1em 5em 2em;
+        }
+    }
+
+    &__indicators.carousel-indicators {
+        bottom: -36px;
+
+        @include tabletUp {
+            bottom: -18px;
+            margin-left: 30px;
+            right: initial;
+        }
+    }
+
+    &__indicators li {
+        background-color: $grey;
+    }
+}

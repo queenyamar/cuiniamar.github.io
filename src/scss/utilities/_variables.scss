@@ -1,0 +1,40 @@
+// ============================================================================
+// Site defaults
+// ============================================================================
+
+// Base font size
+// this will affect all 'rem' and 'em' based units
+// need to be declared in root 'html'
+$base-font: 16px !default;
+
+// ============================================================================
+//Font Family
+$font-logo: 'Lobster Two', cursive !default;
+$font-primary: 'Roboto', sans-serif !default;
+$font-secondary: 'Montserrat', sans-serif !default;
+
+// ============================================================================
+// Breakpoints - to be used as mixins
+// less than 480px is default style, mobile-first approach
+$mobileUp: '(min-width: 576px)' !default;
+$tabletUp: '(min-width: 768px)' !default;
+$desktopUp: '(min-width: 992px)' !default;
+$widescreenUp: '(min-width: 1200px)' !default;
+$bigwidescreenUp: '(min-width: 1440px)' !default;
+
+// ============================================================================
+// Basic Color Pallete
+$white: #ffffff;
+$black: #000000;
+$grey: #8C8C8C !default;
+$bleach: #ebe3d0 !default;
+
+$color-primary: $grey !default;
+$color-secondary: $black !default;
+
+// Derived Colors
+$grey-d10: darken($grey, 10%) !default;
+$grey-l25: lighten($grey, 25%) !default;
+
+// ============================================================================
+$navbar-height: 80px !default;

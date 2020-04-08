@@ -1,0 +1,20 @@
+/* ============================================================================================
+/** Dev List Styles
+=============================================================================================== */
+
+.dev-list {
+    color: $white;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+
+    @include desktopUp {
+        text-align: left;
+        padding-left: 1.5em;
+        min-height: 120px;
+    }
+
+    @include desktopUp {
+        min-height: auto;
+    }
+}

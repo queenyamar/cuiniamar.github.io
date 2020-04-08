@@ -1,0 +1,22 @@
+/* ============================================================================================
+/** About Styles
+=============================================================================================== */
+
+.about {
+    background: $black;
+    padding: 1.5em 0;
+
+    @include tabletUp {
+        padding-top: 2em;
+        padding-bottom: 4em;
+    }
+
+    &__title {
+        text-align: center;
+        color: $white;
+    }
+
+    &__description {
+        color: $white;
+    }
+}

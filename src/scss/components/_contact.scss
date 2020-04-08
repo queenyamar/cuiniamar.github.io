@@ -1,0 +1,93 @@
+/* ============================================================================================
+/** Contact Styles
+=============================================================================================== */
+
+.contact {
+    margin: 1em 0;
+
+    @include tabletUp {
+        margin: 2em 0;
+    }
+
+    &__subtitle {
+        text-align: center;
+        color: $grey;
+        font-family: $font-primary;
+        text-transform: uppercase;
+
+        @include desktopUp {
+            text-align: left;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 0.5em;
+
+        @include desktopUp {
+            text-align: left;
+        }
+    }
+
+    &__form-container {
+        box-shadow: -5px -5px 5px 0px rgba($grey-l25, 1);
+        padding: 1em 0.5em;
+
+        @include tabletUp {
+            padding: 2em 1em;
+        }
+    }
+
+    &__form-container form input.form-control,
+    &__form-container form textarea.form-control {
+        border-radius: 0;
+        border-color: $grey-l25;
+        color: $grey;
+        
+        @include tabletUp {
+            font-size: 1.2rem;
+        }
+
+        @include desktopUp {
+            font-size: 1.3rem;
+        }
+    }
+
+    &__form-container form input.form-control::placeholder,
+    &__form-container form textarea.form-control::placeholder {
+        color: $grey-l25;
+    }
+
+    &__info {
+        box-shadow: -5px -5px 5px 0px rgba($grey-l25, 1);
+        text-align: center;
+        padding: 1em 0;
+        margin-top: 0.5em;
+
+        @include desktopUp {
+            box-shadow: 5px -5px 5px 0px rgba($grey-l25, 1);
+        }
+    }
+
+    &__info-icon {
+        background: $black;
+        border-radius: 50%;
+        color: $grey-l25;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        font-size: 1.5rem;
+        height: 50px;
+        width: 50px;
+        margin: 0 auto;
+    }
+
+    &__info-title {
+        margin-top: 0.5em;
+        margin-bottom: 0;
+        color: $black;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}
