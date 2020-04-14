@@ -1,0 +1,53 @@
+/* ============================================================================================
+/** Theme Color Style
+=============================================================================================== */
+
+.theme-color {
+    margin-top: 1em;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+
+    &__item {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: relative;
+
+        &.is-active {
+            border: 1.5px solid $white;
+        }
+
+        &:nth-child(1) {
+            background-color: $black;
+        }
+
+        &:nth-child(2) {
+            background-color: peachpuff;
+        }
+
+        &:nth-child(3) {
+            background-color: burlywood;
+        }
+
+        &:nth-child(4) {
+            background-color: cyan;
+        }
+
+        &:nth-child(5) {
+            background-color: darkorange;
+        }
+
+        &:nth-child(6) {
+            background-color: darkred;
+        }
+    }
+
+    &__link {
+        &:hover {
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+}

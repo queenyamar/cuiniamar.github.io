@@ -11,6 +11,10 @@
         text-transform: uppercase;
         text-align: center;
         font-weight: 600;
+
+        @include widescreenUp {
+            margin-bottom: 0.5em;
+        }
     }
 
     &__description {
@@ -35,7 +39,7 @@
         }
 
         @include widescreenUp {
-            min-height: 240px;
+            min-height: 250px;
             margin-bottom: 2em;
         }
     }

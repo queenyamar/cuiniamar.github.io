@@ -9,6 +9,14 @@
         margin: 2em 0;
     }
 
+    @include desktopUp {
+        margin: 3em 0;
+    }
+
+    @include widescreenUp {
+        margin: 4em 0;
+    }
+
     &__subtitle {
         text-align: center;
         color: $grey;

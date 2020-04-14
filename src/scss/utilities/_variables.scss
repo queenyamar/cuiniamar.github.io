@@ -9,6 +9,7 @@ $base-font: 16px !default;
 
 // ============================================================================
 //Font Family
+$font-fontawesome: FontAwesome;
 $font-logo: 'Lobster Two', cursive !default;
 $font-primary: 'Roboto', sans-serif !default;
 $font-secondary: 'Montserrat', sans-serif !default;
@@ -38,3 +39,4 @@ $grey-l25: lighten($grey, 25%) !default;
 
 // ============================================================================
 $navbar-height: 80px !default;
+$creatives-height: 500px !default;

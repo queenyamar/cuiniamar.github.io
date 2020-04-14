@@ -71,6 +71,10 @@
                 transform: scaleX(1);
             }
         }
+
+        @include bigwidescreenUp {
+            right: 170px;
+        }
     }
 
     // ========================================
@@ -85,7 +89,7 @@
         }
     }
 
-    &__desktop-nav>&__list {
+    &__desktop-nav > &__list {
         @include tabletUp {
             display: flex;
             justify-content: flex-end;
@@ -106,6 +110,7 @@
 
         @include tabletUp {
             height: auto;
+            margin-right: 20px;
         }
     }
 
@@ -133,12 +138,21 @@
         &:hover,
         &:focus {
             text-decoration: none;
+            color: $white;
         }
     }
 
     &__item:last-child &__link {
         @include tabletUp {
             border-bottom: 0;
+        }
+    }
+
+    &__link--desktop {
+        @include tabletUp {
+            &:hover {
+                color: $black;
+            }
         }
     }
 

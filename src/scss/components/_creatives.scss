@@ -15,7 +15,7 @@
         color: $white;
         text-align: center;
 
-        @include tabletUp {
+        @include desktopUp {
             text-align: left;
         }
     }
@@ -29,30 +29,29 @@
         letter-spacing: 1px;
         margin: 1em 0;
 
-        @include tabletUp {
+        @include desktopUp {
             text-align: left;
         }
     }
 
     &__content {
+        background-color: $black;
         padding: 2em 0.5em;
 
         @include tabletUp {
-            padding: 0 1em 0 2em;
+            padding: 2em;
         }
 
         @include desktopUp {
-            padding: 3em 1em 3em 2em;
-        }
-
-        @include widescreenUp {
-            padding: 5em 1em 5em 2em;
+            padding: 8em 1em 3em 1em;
+            min-height: $creatives-height;
         }
     }
 
     &__images {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     &__img {
@@ -64,6 +63,7 @@
 
         @include desktopUp {
             padding: 3em 1em;
+            min-height: $creatives-height;
         }
         
         @include widescreenUp {
@@ -74,24 +74,29 @@
     &__subcontent {
         padding: 1em 0.5em;
 
-        @include tabletUp {
-            padding: 0 1em 0 2em;
+        @include desktopUp {
+            padding: 8em 1em 3em 1em;
+            min-height: $creatives-height;
         }
+    }
+
+    &__subimg {
+        padding: 1em;
 
         @include desktopUp {
-            padding: 3em 1em 3em 2em;
-        }
-
-        @include widescreenUp {
-            padding: 5em 1em 5em 2em;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            min-height: $creatives-height;
         }
     }
 
     &__indicators.carousel-indicators {
         bottom: -36px;
 
-        @include tabletUp {
-            bottom: -18px;
+        @include desktopUp {
+            bottom: 10px;
             margin-left: 30px;
             right: initial;
         }

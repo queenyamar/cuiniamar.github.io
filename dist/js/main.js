@@ -17911,7 +17911,6 @@ $(document).ready(function () {
   // AP Header (new header)
   // ==========================================================================
   (function () {
-    var navbar = document.querySelector('.main-navbar');
     var navTrigger = document.querySelector('.main-navbar__trigger');
     var menuNav = document.querySelector('.main-navbar__mobile-nav'); // menu-nav click
 
@@ -17925,7 +17924,49 @@ $(document).ready(function () {
     }
   })(); // ==========================================================================
   // ==========================================================================
-  // Search
+  // Color Picker
+  // ==========================================================================
+
+
+  (function () {
+    var colorTrigger = document.querySelector('.color-config__trigger');
+    var colorGear = document.querySelector('.color-config__trigger-link');
+    var colorOption = document.querySelector('.color-config__content');
+
+    if (colorGear) {
+      colorGear.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.target.classList.toggle('is-active');
+        colorTrigger.classList.toggle('is-active');
+        colorOption.classList.toggle('is-active');
+        activeChecker(colorTrigger, colorOption);
+      });
+    }
+  })(); // ==========================================================================
+  // ==========================================================================
+  // Back-to-top Button
+  // ==========================================================================
+
+
+  (function () {
+    $('body').append('<a class="scroll-up"></a>');
+    var btn = $('.scroll-up');
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 400) {
+        btn.addClass('show');
+      } else {
+        btn.removeClass('show');
+      }
+    });
+    btn.on('click', function (e) {
+      e.preventDefault();
+      $('html, body').animate({
+        scrollTop: 0
+      }, '300');
+    });
+  })(); // ==========================================================================
+  // ==========================================================================
+  // 
   // ==========================================================================
   // (function () {
   // })();
@@ -17953,8 +17994,8 @@ $(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\Repository\2020-portfolio\portfolio\src\js\main.js */"./src/js/main.js");
-module.exports = __webpack_require__(/*! D:\Repository\2020-portfolio\portfolio\src\scss\main.scss */"./src/scss/main.scss");
+__webpack_require__(/*! D:\Repository\portfolio\src\js\main.js */"./src/js/main.js");
+module.exports = __webpack_require__(/*! D:\Repository\portfolio\src\scss\main.scss */"./src/scss/main.scss");
 
 
 /***/ })

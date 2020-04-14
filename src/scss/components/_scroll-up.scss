@@ -1,0 +1,40 @@
+/* ============================================================================================
+/** Scroll Up Style
+=============================================================================================== */
+
+.scroll-up {
+    display: inline-block;
+    background-color: $black;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 100px;
+    right: 17px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    box-shadow: 1px 1px 8px 1px rgba($grey, 0.4);
+
+    &::after {
+        content: "\f176";
+        font-family: $font-fontawesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 1.5rem;
+        line-height: 2;
+        color: $white;
+    }
+
+    &.show {
+        opacity: .75;
+        visibility: visible;
+
+        &:hover {
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
+}

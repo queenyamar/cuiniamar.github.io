@@ -1,0 +1,92 @@
+/* ============================================================================================
+/** Color Config
+=============================================================================================== */
+
+.color-config {
+    display: none;
+
+    @include desktopUp {
+        display: block;
+    }
+
+    &__trigger {
+        background-color: $grey;
+        position: fixed;
+        height: 40px;
+        width: 40px;
+        padding: 0.3em;
+        top: 30%;
+        left: -2px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        transition: 0.5s;
+
+        &.is-active {
+            left: 148px;
+            animation: is-sliding-in 0.50s forwards;
+        }
+    }
+
+    &__trigger-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        font-size: 1.2rem;
+        animation: is-rotating 5s infinite linear;
+
+        &:hover {
+            color: $white;
+            text-decoration: none;
+        }
+
+        &::before {
+            content: '\f013';
+            font-family: $font-fontawesome;
+        }
+    }
+
+    &__content {
+        background-color: $grey;
+        border-top-right-radius: 8px;
+        position: fixed;
+        width: 150px;
+        top: 25%;
+        left: -150px;
+        padding: 0.5em 1em;
+        transition: 0.5s;
+        
+        &.is-active {
+            left: 0px;
+            animation: is-sliding-in 0.5s forwards;
+        }
+    }
+
+    &__title {
+        text-transform: uppercase;
+        color: $white;
+        text-align: center;
+        font-weight: 600;
+    }
+}
+
+@keyframes is-rotating {
+    0% {
+        transform:rotate(0deg);
+   }
+   100% {
+       transform:rotate(360deg);
+   }
+}
+
+@keyframes is-sliding-in {
+    100% { 
+        transform: translateX(0%); 
+    }
+}
+
+@keyframes is-sliding-out {
+    100% { 
+        transform: translateX(-100%); 
+    }
+}
