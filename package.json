@@ -6,12 +6,13 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "scss": "node-sass --watch src/scss -o src/css",
+        "prefix": "postcss dist/css/main.css --use=autoprefixer --map=false --output=dist/css/main.css",
         "dev": "npm run development",
         "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "watch": "npm run development -- --watch",
         "watch-poll": "npm run watch -- --watch-poll",
         "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "prod": "npm run production",
+        "prod": "npm run production && npm run prefix",
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "author": "Queeny Kenn Amar",
@@ -19,16 +20,18 @@
     "dependencies": {
         "bootstrap": "^4.4.1",
         "font-awesome": "^4.7.0",
-        "jquery": "^3.4.1",
-        "node-sass": "^4.13.1"
+        "jquery": "^3.4.1"
     },
     "devDependencies": {
-        "autoprefixer": "^9.7.5",
+        "autoprefixer": "^9.7.6",
         "browser-sync": "^2.26.3",
         "browser-sync-webpack-plugin": "^2.0.1",
+        "clean-css-cli": "^4.3.0",
         "cross-env": "^7.0.2",
         "laravel-mix": "^5.0.4",
+        "node-sass": "^4.13.1",
         "popper.js": "^1.12",
+        "postcss-cli": "^7.1.0",
         "postcss-loader": "^2.1.4",
         "resolve-url-loader": "^3.1.0",
         "sass-loader": "^8.0.2",

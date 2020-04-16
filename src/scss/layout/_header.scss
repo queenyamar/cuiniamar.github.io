@@ -3,12 +3,23 @@
 =============================================================================================== */
 
 .main-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: $white;
+    z-index: 100;
+    padding: 0 1em;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     height: $navbar-height;
+
+    @include tabletUp {
+        position: initial;
+        padding: 0;
+    }
 
     // when menu is open, make this fixed on mobile
     &.is-active {
@@ -110,7 +121,6 @@
 
         @include tabletUp {
             height: auto;
-            margin-right: 20px;
         }
     }
 

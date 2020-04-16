@@ -26,7 +26,6 @@ $(document).ready(function () {
 				e.preventDefault()
 				e.target.classList.toggle('is-active')
 				menuNav.classList.toggle('is-active')
-				activeChecker(menuNav)
 			})
 		}
 	})();
@@ -81,6 +80,7 @@ $(document).ready(function () {
 	// 
 	// ==========================================================================
 	// (function () {
+		
 	// })();
 	// ==========================================================================
 

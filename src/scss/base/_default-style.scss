@@ -4,7 +4,12 @@
 
 html * {
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    /* Does not work in IE/Safari */
+    scroll-behavior: smooth; 
 }
 
 body {
