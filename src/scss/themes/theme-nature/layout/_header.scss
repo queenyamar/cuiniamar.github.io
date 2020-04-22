@@ -1,0 +1,113 @@
+/* ============================================================================================
+/** Header Styles
+=============================================================================================== */
+
+.main-navbar {
+    background-color: $color-5;
+
+    &__brand-link {
+        color: $color-4;
+
+        &:hover {
+            color: $color-4;
+        }
+    }
+
+    // ========================================
+    // Mobile Navbar
+    // ========================================
+    &__mobile-nav {
+        /* main navigation background color - full screen on small devices */
+        background-color: $white;
+    }
+
+    // ========================================
+    // Desktop Navbar
+    // ========================================
+
+    &__desktop-nav &__link {
+        @include tabletUp {
+            color: $color-1;
+
+            &:hover {
+                color: $color-1;
+            }
+        }
+    }
+
+    &__link {
+        color: $color-1;
+        border-color: $color-2;
+
+        &:hover,
+        &:focus {
+            color: $color-1;
+        }
+    }
+
+    // ========================================
+    // Hamburger Menu
+    // ========================================
+    &__trigger {
+        background: $color-4;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: transparent;
+        }
+    }
+
+    &__trigger span {
+        background-color: $color-5;
+
+        // @include mobileUp {
+        //     background-color: transparent;
+        // }
+    }
+
+    &__trigger span::before,
+    &__trigger span::after {
+        /* upper and lower lines */
+        background-color: $color-5;
+    }
+
+    &__trigger span::before {
+        transform: translate3d(0, -6px, 0px);
+
+        // @include mobileUp {
+        //     transform: translate3d(-25px, 25px, 0px) rotate(-45deg);
+        // }
+    }
+
+    &__trigger span::after {
+        transform: translate3d(0, 6px, 0px); 
+
+        // @include mobileUp {
+        //     transform: translate3d(25px, 25px, 0px) rotate(45deg);
+        // }
+    }
+
+    &__trigger.is-active {
+        color: transparent;
+    }
+
+    &__trigger.is-active span {
+        /* hide line in the center on mobile when nav is visible */
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    &__trigger.is-active span::before,
+    &__trigger.is-active span::after {
+        /* preserve visibility of upper and lower lines - close icon */
+        background-color: $color-5;
+    }
+
+    &__trigger.is-active span::before {
+        transform: translate3d(0, 0, 0px) rotate(-45deg);
+    }
+
+    &__trigger.is-active span::after {
+        transform: translate3d(0, 0, 0px) rotate(45deg);
+    }
+}
