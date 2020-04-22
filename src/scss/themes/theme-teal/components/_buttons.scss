@@ -1,0 +1,23 @@
+/* ============================================================================================
+/** Button Styles
+=============================================================================================== */
+
+.btn {
+    color: $color-4;
+
+    &:hover {
+        color: $color-4;
+    }
+
+    &-banner {
+        background-color: $color-1;
+        background-image: linear-gradient(45deg, lighten($color-1, 6%) 0%, darken($color-1, 5%) 55%, $color-1 90%);
+        box-shadow: 8px 5px 16px 0 rgba($grey, .25);
+    }
+
+    &-1 {
+        background-color: $color-1;
+        background-image: linear-gradient(45deg, lighten($color-1, 6%) 0%, darken($color-1, 5%) 55%, $color-1 90%);
+        box-shadow: 8px 5px 16px 0 rgba($grey, .25);
+    }
+}

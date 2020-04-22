@@ -94,6 +94,10 @@ $(document).ready(function () {
 					$('.hero__banner').attr('src', 'dist/img/banner-peachy.png');
 					$('.profession__palette').attr('src', 'dist/img/svg/palette-icon-peachy.svg');
 				  break;
+				case 'teal':
+					$('.hero__banner').attr('src', 'dist/img/banner-teal.png');
+					$('.profession__palette').attr('src', 'dist/img/svg/palette-icon-teal.svg');
+				  break;
 				default:
 					$('.profession__palette').attr('src', 'dist/img/svg/palette-icon.svg');
 			}
