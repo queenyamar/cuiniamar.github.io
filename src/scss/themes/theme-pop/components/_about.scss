@@ -3,13 +3,13 @@
 =============================================================================================== */
 
 .about {
-    background: $color-1;
+    background: transparent;
 
     &__title {
-        color: darken($color-4, 10%);
+        color: $color-4;
     }
 
     &__description {
-        color: $white;
+        color: $color-3;
     }
 }

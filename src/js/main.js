@@ -106,6 +106,10 @@ $(document).ready(function () {
 					$('.hero__banner').attr('src', 'dist/img/banner-nature.png');
 					$('.profession__palette').attr('src', 'dist/img/svg/palette-icon-nature.svg');
 				  break;
+				case 'pop':
+					$('.hero__banner').attr('src', 'dist/img/banner-pop.png');
+					$('.profession__palette').attr('src', 'dist/img/svg/palette-icon-pop.svg');
+				  break;
 				default:
 					$('.hero__banner').attr('src', 'dist/img/banner.png');
 					$('.profession__palette').attr('src', 'dist/img/svg/palette-icon.svg');

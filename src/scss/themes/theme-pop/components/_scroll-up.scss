@@ -1,15 +1,12 @@
 /* ============================================================================================
-/** About Styles
+/** Scroll Up Style
 =============================================================================================== */
 
-.about {
-    background: $color-1;
+.scroll-up {
+    background-color: $color-4;
+    box-shadow: none;
 
-    &__title {
-        color: darken($color-4, 10%);
-    }
-
-    &__description {
-        color: $white;
+    &::after {
+        color: $color-3;
     }
 }

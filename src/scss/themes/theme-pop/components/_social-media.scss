@@ -1,15 +1,17 @@
 /* ============================================================================================
-/** About Styles
+/** Footer Social Media Styles
 =============================================================================================== */
 
-.about {
-    background: $color-1;
-
-    &__title {
-        color: darken($color-4, 10%);
+.social-media {
+    &__item {
+        background: $color-3;
     }
 
-    &__description {
-        color: $white;
+    &__link {
+        color: $color-4;
+
+        &:hover {
+            color: darken($color-4, 5%);
+        }
     }
 }

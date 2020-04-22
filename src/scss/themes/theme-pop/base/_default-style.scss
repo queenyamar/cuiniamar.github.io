@@ -1,15 +1,17 @@
 /* ============================================================================================
-/** About Styles
+/** Default Styles
 =============================================================================================== */
 
-.about {
-    background: $color-1;
+body {
+    color: $color-primary;
+    background-color: $color-5;
+}
 
-    &__title {
-        color: darken($color-4, 10%);
-    }
-
-    &__description {
-        color: $white;
-    }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $color-4;
 }

@@ -1,0 +1,45 @@
+/* ============================================================================================
+/** Contact Styles
+=============================================================================================== */
+
+.contact {
+    &__subtitle {
+        color: $color-3;
+    }
+
+    &__form-container {
+        box-shadow: none;
+        border: 1px solid $color-4;
+    }
+
+    &__form-container form input.form-control,
+    &__form-container form textarea.form-control {
+        border-radius: 0;
+        border-color: $color-4;
+        color: $color-3;
+        background-color: $color-5;
+    }
+
+    &__form-container form input.form-control::placeholder,
+    &__form-container form textarea.form-control::placeholder {
+        color: lighten($color-3, 10%);
+    }
+
+    &__info {
+        box-shadow: none;
+        border: 1px solid $color-4;
+    }
+
+    &__info-icon {
+        background: $color-3;
+        color: $color-4;
+    }
+
+    &__info-title {
+        color: $color-3;
+    }
+
+    &__info-description {
+        color: $color-3;
+    }
+}

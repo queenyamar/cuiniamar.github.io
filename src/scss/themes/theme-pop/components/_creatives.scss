@@ -1,0 +1,21 @@
+/* ============================================================================================
+/** Creatives Styles
+=============================================================================================== */
+
+.creatives {
+    &__title {
+        color: lighten($color-4, 20%);
+    }
+
+    &__subtitle {
+        color: $color-3;
+    }
+
+    &__content {
+        background-color: $color-1;
+    }
+
+    &__indicators li {
+        background-color: $color-3;
+    }
+}

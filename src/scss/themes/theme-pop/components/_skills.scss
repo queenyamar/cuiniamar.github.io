@@ -1,0 +1,43 @@
+/* ============================================================================================
+/** Skills
+=============================================================================================== */
+
+.skills {
+    background: $color-2;
+
+    &__title {
+        color: lighten($color-4, 20%);
+
+        @include desktopUp {
+            &::after {
+                background: $color-3;
+            }
+        }
+    }
+
+    &__design-title,
+    &__dev-title {
+        color: $color-3;
+    }
+
+    &__dev-label {
+        color: lighten($color-4, 20%);
+    }
+
+    &__design-description {
+        color: $white;
+    }
+
+    &__pie-half {
+        border: 0.1em solid lighten($color-4, 20%);
+    }
+
+    &__pie-label {
+        background: $color-2;
+        color: $white;
+
+        span {
+            color: $white;
+        }
+    }
+}
