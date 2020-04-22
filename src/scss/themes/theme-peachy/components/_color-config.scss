@@ -1,0 +1,25 @@
+/* ============================================================================================
+/** Color Config
+=============================================================================================== */
+
+.color-config {
+    &__trigger {
+        background-color: $color-1;
+    }
+
+    &__trigger-link {
+        color: $color-4;
+
+        &:hover {
+            color: $color-4;
+        }
+    }
+
+    &__content {
+        background-color: $color-1;
+    }
+
+    &__title {
+        color: $color-3;
+    }
+}

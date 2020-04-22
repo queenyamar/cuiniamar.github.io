@@ -45,7 +45,6 @@ $(document).ready(function () {
 				e.target.classList.toggle('is-active')
 				colorTrigger.classList.toggle('is-active')
 				colorOption.classList.toggle('is-active')
-				activeChecker(colorTrigger, colorOption)
 			})
 		}
 	})();
@@ -77,11 +76,29 @@ $(document).ready(function () {
 
 
 	// ==========================================================================
-	// 
+	// Color Option
 	// ==========================================================================
-	// (function () {
-		
-	// })();
+	(function () {
+		$('.theme-color__item a').on('click', function(e) { 
+			var $styleSheet = $(this).attr('data-style');
+			var $name = $(this).attr('data-name');
+			
+			$('#theme-style').attr('href', $styleSheet);
+
+			// Change is-active
+			$('.theme-color__item').removeClass('is-active');
+			$(this).parent().addClass('is-active');
+
+			switch($name) {
+				case 'peachy':
+					$('.hero__banner').attr('src', 'dist/img/banner-peachy.png');
+					$('.profession__palette').attr('src', 'dist/img/svg/palette-icon-peachy.svg');
+				  break;
+				default:
+					$('.profession__palette').attr('src', 'dist/img/svg/palette-icon.svg');
+			}
+		});	
+	})();
 	// ==========================================================================
 
 
