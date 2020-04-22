@@ -1,8 +1,9 @@
 try {
     window.Popper = require('popper.js').default;
-    window.$ = window.jQuery = require('jquery');
-    
+	window.$ = window.jQuery = require('jquery');
+	
     require('bootstrap');
+    require('js-loading-overlay');
 } catch (e) {}
 
 // ============================================================================
@@ -10,7 +11,6 @@ try {
 //	Will fire immediately when DOM is ready
 // ============================================================================
 $(document).ready(function () {
-
 
 	// ==========================================================================
 	// AP Header (new header)
@@ -80,6 +80,21 @@ $(document).ready(function () {
 	// ==========================================================================
 	(function () {
 		$('.theme-color__item a').on('click', function(e) { 
+			// Loading Overlay
+			JsLoadingOverlay.show({
+				'spinnerIcon': 'ball-fussion',
+				'spinnerColor': '#eee',
+  				'spinnerSize': 'small',
+			});
+			$('.main-navbar__list').hide();
+
+			// Loading Delay
+			setTimeout(() => {
+				JsLoadingOverlay.hide();
+				$('.main-navbar__list').show();
+			}, 800)
+
+			// Retreiving CSS Styles
 			var $styleSheet = $(this).attr('data-style');
 			var $name = $(this).attr('data-name');
 			
@@ -89,6 +104,7 @@ $(document).ready(function () {
 			$('.theme-color__item').removeClass('is-active');
 			$(this).parent().addClass('is-active');
 
+			// Switching Images
 			switch($name) {
 				case 'peachy':
 					$('.hero__banner').attr('src', 'dist/img/banner-peachy.png');
