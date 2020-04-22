@@ -1,0 +1,23 @@
+/* ============================================================================================
+/** Profession Styles
+=============================================================================================== */
+
+.profession {
+    &__icon {
+        color: $color-2;
+    }
+
+    &__icon .fa-code {
+        background-color: $color-5;
+    }
+
+    &__illusion {
+        @include tabletUp {
+            background: $color-1;
+        }
+    }
+
+    &__title {
+        color: $color-2;
+    }
+}

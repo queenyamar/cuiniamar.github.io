@@ -98,7 +98,12 @@ $(document).ready(function () {
 					$('.hero__banner').attr('src', 'dist/img/banner-teal.png');
 					$('.profession__palette').attr('src', 'dist/img/svg/palette-icon-teal.svg');
 				  break;
+				case 'warm':
+					$('.hero__banner').attr('src', 'dist/img/banner-warm.png');
+					$('.profession__palette').attr('src', 'dist/img/svg/palette-icon-warm.svg');
+				  break;
 				default:
+					$('.hero__banner').attr('src', 'dist/img/banner.png');
 					$('.profession__palette').attr('src', 'dist/img/svg/palette-icon.svg');
 			}
 		});	
