@@ -30,9 +30,17 @@ $black: #000000;
 $grey: #8C8C8C !default;
 $bleach: #ebe3d0 !default;
 
+// =================
+//  Resume Colors
+$color-1: #7cd1ce !default;
+$color-2: #404041 !default;
+
+// =================
+//  Inherited Colors
 $color-primary: $grey !default;
 $color-secondary: $black !default;
 
+// =================
 // Derived Colors
 $grey-d10: darken($grey, 10%) !default;
 $grey-l25: lighten($grey, 25%) !default;
