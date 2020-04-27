@@ -1,0 +1,50 @@
+/* ============================================================================================
+/** 404 Styles
+=============================================================================================== */
+
+.error-page {
+    /* =====================================
+    * Error Page Body
+    ======================================== */
+    &__body {
+        padding: 5em 0;
+
+        @include widescreenUp {
+            padding: 6em 0;
+        }
+    }
+
+    &__title {
+        font-size: 2.8rem;
+        color: $grey;
+        text-align: center;
+
+        @include tabletUp {
+            font-size: 3rem;
+            text-align: left;
+        }
+    }
+
+    &__subtitle {
+        font-family: $font-primary;
+        text-align: center;
+        margin: 0.5em 0;
+
+        @include tabletUp {
+            text-align: left;
+        }
+    }
+
+    &__img-container {
+        text-align: center;
+        margin-top: 3em;
+
+        @include tabletUp {
+            margin-top: 6em;
+        }
+
+        @include desktopUp {
+            margin-top: 1.5em;
+        }
+    }
+}

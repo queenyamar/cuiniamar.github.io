@@ -32,6 +32,16 @@
         background-color: $color-2;
     }
 
+    &-error {
+        background-color: $color-1;
+        background-image: linear-gradient(45deg, darken($color-1, 20%) 0%, darken($color-1, 15%) 55%, $color-1 90%);
+        box-shadow: 0 10px 30px 0 rgba($grey, .35);
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-size: 1rem;
+    }
+
     &-1 {
         background-color: $black;
         background-image: linear-gradient(45deg, lighten($black, 20%) 0%, lighten($black, 35%) 55%, $black 90%);
