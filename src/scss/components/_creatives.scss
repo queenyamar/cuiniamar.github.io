@@ -80,14 +80,14 @@
         }
     }
 
+    &__subcontent &__title {
+        color: $black;
+    }
+
     &__subimg {
         padding: 1em;
 
         @include desktopUp {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
             min-height: $creatives-height;
         }
     }
