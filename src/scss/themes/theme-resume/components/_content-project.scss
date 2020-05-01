@@ -1,0 +1,41 @@
+/* ============================================================================================
+/** Content Project Styles
+=============================================================================================== */
+
+.content-project {
+    &__title {
+        font-size: 1rem;
+        color: $black;
+    }
+
+    &__label {
+        margin-bottom: 10px;
+        font-size: 0.75rem;
+    }
+
+    &__company {
+        color: $grey;
+        font-size: 0.8rem;
+
+        @include desktopUp {
+            text-align: right;
+            margin-bottom: 0;
+        }
+    }
+
+    &__list {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        color: $white;
+        background: $color-primary;
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+        margin-right: 10px;
+        padding: 5px 10px;
+    }
+}

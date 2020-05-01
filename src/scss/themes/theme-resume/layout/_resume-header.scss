@@ -1,0 +1,57 @@
+/* ============================================================================================
+/** Resume Header
+=============================================================================================== */
+
+.resume-header {
+    padding: 1em 0;
+
+    &__name {
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 2px;
+
+        @include desktopUp {
+            text-align: left;
+            margin-top: 0.5em;
+        }
+    }
+
+    &__profession {
+        font-size: 1.25rem;
+        text-align: center;
+        font-weight: 300;
+
+        @include desktopUp {
+            text-align: left;
+        }
+    }
+
+    &__contacts {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 1.5em 0;
+    }
+
+    &__item {
+        margin-bottom: 0.5em;
+        display: flex;
+        align-items: center;
+    }
+
+    &__item .fa {
+        background: $color-primary;
+        color: $white;
+        height: 32px;
+        width: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        margin-right: 0.5em;
+    }
+}

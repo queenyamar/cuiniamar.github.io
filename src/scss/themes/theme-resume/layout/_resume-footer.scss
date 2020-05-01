@@ -1,0 +1,47 @@
+/* ============================================================================================
+/** Resume Footer Styles
+=============================================================================================== */
+
+.resume-footer {
+    padding-bottom: 1.5em;
+
+    @include desktopUp {
+        padding-bottom: 1em;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    &__item {
+        position: relative;
+        background: $color-primary;
+        width: 25px;
+        height: 25px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    &__link {
+        color: $white;
+        font-size: 0.75rem;
+
+        &:hover {
+            color: $white;
+            cursor: pointer;
+        }
+    }
+
+    &__copyrights {
+        font-size: 0.75rem;
+        color: $grey;
+        text-align: center;
+    }
+}

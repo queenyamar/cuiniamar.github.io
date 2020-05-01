@@ -102,7 +102,7 @@
                                     amazing <span>together</span>
                                 </p>
                                 <p class="mb-md-4">My mind sometimes wonder, how things are created and existed on this world. As well as, how did I manage to do complex programs and survive it.</p>
-                                <a href="resume.html" class="btn btn-banner">Come, Hire Me</a>
+                                <a href="resume.html" class="btn btn-banner">See My Resume</a>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -443,21 +443,21 @@
                         </div>
                         <div class="col-lg-8">
                             <div class="contact__form-container">
-                                <form action="">
+                                <form name="contactform" method="get" action="src/php/email.php">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name" required>
+                                        <input name="name" type="text" class="form-control" placeholder="Name" required>
                                     </div>
                                     <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email" required>
+                                        <input name="email" type="email" class="form-control" placeholder="Email" required>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject" required>
+                                        <input name="subject" type="text" class="form-control" placeholder="Subject" required>
                                     </div>
                                     <div class="form-group">
-                                        <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Your Message" required></textarea>
+                                        <textarea name="message" cols="30" rows="10" class="form-control" placeholder="Your Message" required></textarea>
                                     </div>
                                     <div class="text-center text-lg-left mt-4">
-                                        <button class="btn btn-1">Send Message</button>
+                                        <button type="submit" value="submit" class="btn btn-1">Send Message</button>
                                     </div>
                                 </form>
                             </div>

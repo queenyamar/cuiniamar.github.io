@@ -1,0 +1,28 @@
+/* ============================================================================================
+/** Profile Styles
+=============================================================================================== */
+
+.profile {
+    padding: 1.5em 0;
+
+    @include desktopUp {
+        padding: 1em 0;
+    }
+
+    &__image {
+        margin-bottom: 1em;
+    }
+
+    &__image img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        display: block;
+        margin: 0 auto;
+
+        @include desktopUp {
+            width: 180px;
+            height: 180px;
+        }
+    }
+}

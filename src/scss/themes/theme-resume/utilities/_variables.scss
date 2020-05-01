@@ -1,0 +1,42 @@
+// ============================================================================
+// Site defaults
+// ============================================================================
+
+// Base font size
+// this will affect all 'rem' and 'em' based units
+// need to be declared in root 'html'
+$base-font: 16px !default;
+
+// ============================================================================
+//Font Family
+$font-fontawesome: FontAwesome;
+$font-primary: 'Roboto', sans-serif;
+$font-secondary: 'Montserrat', sans-serif;
+
+// ============================================================================
+// Breakpoints - to be used as mixins
+// less than 480px is default style, mobile-first approach
+$mobileUp: '(min-width: 576px)' !default;
+$tabletUp: '(min-width: 768px)' !default;
+$desktopUp: '(min-width: 992px)' !default;
+$widescreenUp: '(min-width: 1200px)' !default;
+$bigwidescreenUp: '(min-width: 1440px)' !default;
+
+
+// ============================================================================
+// Basic Color Pallete
+$white: #fff;
+$black: #000;
+$grey: #767676 !default;
+$color-primary: #4f4f4f;
+$color-secondary: #54B689;
+
+// =================
+//  Inherited Colors
+
+
+// =================
+// Derived Colors
+
+
+// ============================================================================

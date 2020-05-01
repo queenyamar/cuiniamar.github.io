@@ -1,0 +1,38 @@
+// ============================================================================
+// Breakpoints Mixins
+// ============================================================================
+
+// Small devices (landscape phones, 576px and up)
+@mixin mobileUp {
+	@media #{$mobileUp} {
+		@content;
+	}
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin tabletUp {
+	@media #{$tabletUp} {
+		@content;
+	}
+}
+
+// Large devices (desktops, 992px and up)
+@mixin desktopUp {
+	@media #{$desktopUp} {
+		@content;
+	}
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@mixin widescreenUp {
+	@media #{$widescreenUp} {
+		@content;
+	}
+}
+
+// Extra large devices (large desktops, 1440px and up)
+@mixin bigwidescreenUp {
+	@media #{$bigwidescreenUp} {
+		@content;
+	}
+}

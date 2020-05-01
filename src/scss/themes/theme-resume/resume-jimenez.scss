@@ -1,20 +1,20 @@
-// ============================================================================
-// Import Core file
-// ============================================================================
+// Declaring Bootstrap core files here
+// so that it is available globally
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/font-awesome/scss/font-awesome";
 
-@import "../../main";
 
 // ============================================================================
 // Utilities - Variable file along with starting point Mixins, Helpers and Placeholders.
 // ============================================================================
 
-// @import "utilities/fonts";
+@import "utilities/fonts";
 @import "utilities/variables";
 // @import "utilities/global";
 // @import "utilities/functions";
-// @import "utilities/mixins";
-// @import "utilities/breakpoint-mixins";
-// @import "utilities/helpers";
+@import "utilities/mixins";
+@import "utilities/breakpoint-mixins";
+@import "utilities/helpers";
 
 
 // ============================================================================
@@ -29,27 +29,23 @@
 // Layout
 // ============================================================================
 
-@import "layout/header";   
+@import "layout/resume-header";
 // @import "layout/main-content";
-@import "layout/footer";  
+@import "layout/resume-footer";  
    
 
 // ============================================================================
 // Components
 // ============================================================================
 
-@import "components/hero";
+@import "components/profile";
+@import "components/content";
+@import "components/content-jobs";
+@import "components/content-project";
+@import "components/skill";
+@import "components/education";
+@import "components/awards";
 @import "components/buttons";
-@import "components/profession";
-@import "components/about";
-@import "components/creatives";
-@import "components/skills";
-@import "components/dev-list";
-@import "components/contact";
-@import "components/social-media";
-@import "components/scroll-up";
-@import "components/color-config";
-// @import "components/theme-color";
 
 
 // ============================================================================
