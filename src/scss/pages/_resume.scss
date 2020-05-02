@@ -18,7 +18,7 @@
 
         @include desktopUp {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
             padding: 1em;
         }
 
@@ -41,6 +41,8 @@
            @include widescreenUp {
                width: 290px;
                border-radius: 0;
+               position: relative;
+               left: -36px;
            }
         }
 
@@ -191,7 +193,7 @@
             }
         }
 
-        &__projects {
+        &__work {
             position: relative;
 
             @include widescreenUp {
@@ -226,9 +228,10 @@
         }
 
         &__label {
-            margin-bottom: 10px;
+            margin-bottom: 0;
             color: $color-1;
             font-weight: 600;
+            font-size: 0.8rem;
         }
 
         &__position {
@@ -255,6 +258,34 @@
             margin-right: 5px;
             margin-bottom: 10px;
             font-size: 0.8rem;
+        }
+
+        &__project-name {
+            font-weight: 600;
+            font-size: 1.4rem;
+            color: $color-2;
+            margin-bottom: 0;
+        }
+
+        &__project-info {
+            font-size: 0.8rem;
+
+            @include desktopUp {
+                margin-bottom: 0;
+            }
+        }
+
+        &__project-description {
+            font-size: 0.8rem;
+        }
+
+        &__project-link {
+            color: $color-1;
+            font-weight: 600;
+
+            &:hover {
+                color: darken($color-1, 5%);
+            }
         }
 
         &__skill-list {
