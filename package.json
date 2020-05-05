@@ -21,7 +21,7 @@
         "bootstrap": "^4.4.1",
         "bulma": "^0.8.2",
         "font-awesome": "^4.7.0",
-        "jquery": "^3.4.1",
+        "jquery": "^3.5.0",
         "js-loading-overlay": "^1.0.4"
     },
     "devDependencies": {
