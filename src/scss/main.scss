@@ -1,7 +1,7 @@
 // Declaring Bootstrap core files here
 // so that it is available globally
 @import "node_modules/bootstrap/scss/bootstrap";
-@import "node_modules/font-awesome/scss/font-awesome";
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 // ============================================================================
 // Utilities - Variable file along with starting point Mixins, Helpers and Placeholders.

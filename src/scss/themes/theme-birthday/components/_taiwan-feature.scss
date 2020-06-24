@@ -1,0 +1,59 @@
+/* ============================================================================================
+/** Taiwan Feature
+===============================================================================================*/
+
+.taiwan-feature {
+    &__title-container {
+        background-color: $color-2;
+        padding: 0.5em 0;
+
+        @include mobileUp {
+            padding: 1em 0;
+        }
+
+        @include tabletUp {
+            width: 100%;
+            height: 250px;
+        }
+
+        @include desktopUp {
+            height: 400px;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        color: $white;
+        font-family: $font-secondary;
+        font-size: 4rem;
+
+        @include tabletUp {
+            margin-bottom: 0;
+            font-size: 5rem;
+        }
+
+        @include desktopUp {
+            font-size: 7rem;
+        }
+    }
+
+    &__banner {
+        margin-top: -2.2em;
+
+        @include tabletUp {
+            margin-top: -7.8em;
+        }
+
+        @include desktopUp {
+            margin-top: -13.8em;
+        }
+    }
+
+    // &__content {
+    //     background: $white;
+    //     height: auto;
+    //     width: 550px;
+    //     padding: 1em;
+    //     margin: 0 auto;
+    // }
+}

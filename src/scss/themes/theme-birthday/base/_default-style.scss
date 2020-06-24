@@ -1,0 +1,33 @@
+/* ============================================================================================
+/** Default Styles
+=============================================================================================== */
+
+body {
+    color: $black;
+}
+
+h1 {
+    font-family: $font-secondary;
+    font-size: 5rem;
+}
+
+h3 {
+    font-family: $font-primary;
+    font-weight: 900;
+    color: $black;
+}
+
+h4 {
+    font-family: $font-primary;
+    font-weight: 600;
+    color: $black;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 0.8rem;
+
+    @include tabletUp {
+        font-size: 0.9rem;
+    }
+}
